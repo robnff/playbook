@@ -17,6 +17,7 @@ Before launching to production, assert following steps are guaranteed.
 
 ## Django Checklist
 
+- [ ] Follow [Django Deployment checklist](https://docs.djangoproject.com/en/dev/howto/deployment/checklist/)
 - [ ] Run `python manage.py check --deploy` in production
 - [ ] Anonymize the URLs for Admin, Celery Flower, etc.
 - [ ] Check redirections, especially if it's a new platform replacing an old one.
@@ -85,3 +86,7 @@ Before launching to production, assert following steps are guaranteed.
 - [ ] Check TTL. Set low when launching, set high after everything is fine.
 - [ ] Move API to a different subdomain *(`api.example.org`, for example)*. This allows a different server for the frontend.
 - [ ] Enforce or remove *www* subdomain (and set `PREPEND_WWW` in Django if necessary).
+
+## SEO Checklist
+- [ ] Follow [SEO For Web Engineers](https://www.johnwdefeo.com/articles/seo-for-engineers).
+- [ ] Follow [A technical guide to SEO](https://ma.ttias.be/technical-guide-seo/)
